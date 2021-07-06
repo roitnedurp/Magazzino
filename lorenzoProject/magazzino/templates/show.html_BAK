@@ -26,7 +26,7 @@
 <div class="container bg-dark">		
 	<div class="row">
 		<div class="col-sm">
-			<h4 class="text-warning"> Magazzino project 0.0.1 </h4>
+			<h4 class="text-warning"> Magazzino 0.0.2 </h4>
 		</div> 
 		<div class="col-sm">
 			<p class="text-warning"> <a href="/maga" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Add New Record</a> </p>
@@ -42,11 +42,11 @@
 -->
 	<thead class="thead-dark">  
 	<tr>  
-		<th>part ID</th>  
-		<th>part ID</subkey>  
-		<th>part Name</th>  
-		<th>part Manifacturer</th>  
-		<th>part Description</th>  
+		<th>ID</th>  
+		<th>Sub</subkey>  
+		<th>Name</th>  
+		<th>Manifacturer</th>  
+		<th>Description</th>  
 		<th>Actions</th>  
 	</tr>  
 	</thead>  
