@@ -1,0 +1,98 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+	<meta charset="UTF-8">  
+	<title>magazzino Project - show</title>  
+	 
+	{% load static %}  
+	<link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+	<link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}"/>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Icons -->
+	<script src="https://kit.fontawesome.com/6c50d63416.js" crossorigin="anonymous"></script>
+	<!-- DataTables -->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+	<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+	
+</head>  
+<body>  
+	
+	
+<div class="container bg-dark">		
+	<div class="row">
+		<div class="col-sm">
+			<h4 class="text-warning"> Magazzino project 0.0.1 </h4>
+		</div> 
+		<div class="col-sm">
+			<p class="text-warning"> <a href="/maga" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Add New Record</a> </p>
+		</div> 
+	</div>
+</div>
+	
+	
+<div class="container bg-light">	
+<table id="sortTable" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">	
+<!--
+<table class="table table-striped table-bordered table-sm">  
+-->
+	<thead class="thead-dark">  
+	<tr>  
+		<th>part ID</th>  
+		<th>part Sub</subkey>  
+		<th>part Name</th>  
+		<th>part Manifacturer</th>  
+		<th>part Description</th>  
+		<th>Actions</th>  
+	</tr>  
+	</thead>  
+	<tbody>  
+{% for magazzino in magazzinos %}  
+	<tr>  
+		<td>{{ magazzino.eid }}</td>  
+		<td>{{ magazzino.subkey }}</td>  
+		<td>{{ magazzino.ename }}</td>  
+		<td>{{ magazzino.eefirm }}</td>  
+		<td>{{ magazzino.edescription }}</td>  
+		<td>  
+			<a href="/edit/{{ magazzino.id }}"><i class="fas fa-pencil-alt"></i> Edit</span></a>  <br>
+			<a href="/delete/{{ magazzino.id }}"><i class="fas fa-trash-alt"></i> Delete</span></a>  
+		</td>  
+	</tr>  
+{% endfor %}  
+	</tbody>  
+</table>  
+<br>  
+<br>  
+
+<!--
+<script>
+$('#sortTable').DataTable();
+</script>
+-->
+
+
+<script>
+	//$(document).ready(function() {
+	    $('#sortTable').DataTable( {
+	        "lengthMenu": [[10, 25, 50, -1], [100, 25, 50, "All"]]
+	    } );
+	//} );
+</script>
+
+
+ 
+</div>
+{% block content %}
+{% endblock %}
+ 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+</body>  
+</html>  

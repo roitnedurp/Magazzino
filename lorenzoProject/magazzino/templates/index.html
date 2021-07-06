@@ -1,0 +1,74 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+	<meta charset="UTF-8">  
+	<title>magazzino Project - index</title>  
+
+	{% load static %}  
+	<link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+	<link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}"/>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>  
+<body>  
+<form method="POST" class="post-form" action="/maga">  
+		{% csrf_token %}  
+	<div class="container bg-light">  
+<br>  
+	<div class="form-group row">  
+	<label class="col-sm-1 col-form-label"></label>  
+	<div class="col-sm-4">  
+	<h3>Enter Details</h3>  
+	</div>  
+  </div>  
+
+  <div class="form-group row">  
+	<label class="col-sm-2 col-form-label">part Id:</label>  
+	<div class="col-sm-4">  
+	  {{ form.eid }}  
+  </div>  
+
+  <div class="form-group row">  
+	<label class="col-sm-2 col-form-label">part subkey:</label>  
+	<div class="col-sm-4">  
+	  {{ form.subkey }}  
+  </div>  
+
+  </div>  
+  <div class="form-group row">  
+	<label class="col-sm-2 col-form-label">part Name:</label>  
+	<div class="col-sm-4">  
+	  {{ form.ename }}  
+	</div>  
+  </div>  
+	<div class="form-group row">  
+	<label class="col-sm-2 col-form-label">part Manifacturer:</label>  
+	<div class="col-sm-4">  
+	  {{ form.eefirm }}  
+	</div>  
+  </div>  
+	<div class="form-group row">  
+	<label class="col-sm-2 col-form-label">part Description:</label>  
+	<div class="col-sm-4">  
+	  {{ form.edescription }}  
+	</div>  
+  </div>  
+	<div class="form-group row">  
+	<label class="col-sm-1 col-form-label"></label>  
+	<div class="col-sm-4">  
+	<button type="submit" class="btn btn-primary">Submit</button>  
+	<a href="/show" class="btn btn-success">Back</a> 
+	</div>  
+  </div>  
+	</div>  
+</form>  
+{% block content %}
+{% endblock %}
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</body>  
+</html>  
