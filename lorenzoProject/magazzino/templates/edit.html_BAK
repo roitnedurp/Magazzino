@@ -24,35 +24,49 @@
   </div>  
 
   <div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part Id:</label>  
+	<label class="col-sm-2 col-form-label">Id:</label>  
 	<div class="col-sm-4">  
 		<input class="form-control"  type="text" name="eid" id="id_eid" required maxlength="20" value="{{ magazzino.eid }}"/>  
 	</div>  
   </div> 
    
   <div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part Id:</label>  
+	<label class="col-sm-2 col-form-label">Subkey:</label>  
 	<div class="col-sm-4">  
 		<input class="form-control"  type="text" name="subkey" id="id_subkey" required maxlength="20" value="{{ magazzino.subkey }}"/>  
 	</div>  
   </div> 
 
   <div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part Name:</label>  
+	<label class="col-sm-2 col-form-label">name:</label>  
 	<div class="col-sm-4">  
-		<input class="form-control"  type="text" name="ename" id="id_ename" required maxlength="100" value="{{ magazzino.ename }}" />  
+		<input class="form-control"  type="text" name="ename" id="id_ename" required maxlength="60" value="{{ magazzino.ename }}"/>  
+	</div>  
+  </div> 
+
+  <div class="form-group row">  
+	<label class="col-sm-2 col-form-label">Quantity:</label>  
+	<div class="col-sm-4">  
+		<input class="form-control"  type="number" name="quantity" id="id_quantity" required maxlength="100" value="{{ magazzino.quantity }}" />  
 	</div>  
   </div>  
   
   <div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part Manifacturer:</label>  
+	<label class="col-sm-2 col-form-label">Code Maker:</label>  
 	<div class="col-sm-4">  
-		<input class="form-control"  type="text" name="eefirm" id="id_eefirm" required maxlength="100" value="{{ magazzino.eefirm }}" />  
+		<input class="form-control"  type="text" name="code_maker" id="id_code_maker" required maxlength="100" value="{{ magazzino.code_maker }}" />  
+	</div>  
+  </div>  
+
+  <div class="form-group row">  
+	<label class="col-sm-2 col-form-label">Code Vendor:</label>  
+	<div class="col-sm-4">  
+		<input class="form-control"  type="text" name="code_vendor" id="id_code_vendor" required maxlength="100" value="{{ magazzino.code_vendor }}" />  
 	</div>  
   </div>  
 	
   <div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part Description:</label>  
+	<label class="col-sm-2 col-form-label">Description:</label>  
 	<div class="col-sm-4">  
 		 <textarea class="form-control" name="edescription" id="id_edescription" rows="3"  >{{ magazzino.edescription }}</textarea> 
 		 <!-- <input type="text" name="edescription" id="id_edescription" required maxlength="500" value="{{ magazzino.edescription }}" />  -->
