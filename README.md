@@ -28,11 +28,9 @@
 If MySQL support is unnecessary or unwanted, simplest way to store your data is SQlite
 in `settings.py` alterate DATABASES object like this below:
 
-`
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-`
+`DATABASES = {`
+`    'default': {`
+`        'ENGINE': 'django.db.backends.sqlite3',`
+`        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),`
+`    }`
+`}`
