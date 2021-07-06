@@ -1,7 +1,0 @@
-# get Magazzino running
-
-- source .env/bin/activate
-
-- cd lorenzoProject/
-
-- ./run.sh
