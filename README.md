@@ -28,10 +28,12 @@
 
 ### pros
 portability, virtually no network connection needed (bootstrap need internet connection)
+
 semplicity, one-node model
 
 ### cons
 code must be changed
+
 sqlite management require docs readings, no adminer at all
 
 ### requirements:
@@ -39,6 +41,7 @@ sqlite management require docs readings, no adminer at all
 
 ### deployment:
 If MySQL support is unnecessary or unwanted, simplest way to store your data is SQlite
+
 in `settings.py` alterate DATABASES object like this below:
 
 DATABASES = {
