@@ -48,7 +48,8 @@
 		<th>Quantity</th>
 		<th>Code Maker</th>  
 		<th>Code Vendor</th>  
-		<th>Description</th>  
+		<th>Description</th>
+		<th>Progetto</th>
 		<th>Actions</th>  
 	</tr>  
 	</thead>  
@@ -61,7 +62,9 @@
 		<td>{{ magazzino.quantity }}</td>  
 		<td>{{ magazzino.code_maker }}</td>  
 		<td>{{ magazzino.code_vendor }}</td>  
-		<td>{{ magazzino.edescription }}</td>  
+		<td>{{ magazzino.edescription }}</td>
+		<td>{{ magazzino.progetto }}</td>  
+  
 		<td>  
 			<a href="/edit/{{ magazzino.id }}"><i class="fas fa-pencil-alt"></i> Edit</span></a>  <br>
 			<a href="/delete/{{ magazzino.id }}"><i class="fas fa-trash-alt"></i> Delete</span></a>  

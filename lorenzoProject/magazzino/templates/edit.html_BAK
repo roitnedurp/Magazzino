@@ -38,7 +38,7 @@
   </div> 
 
   <div class="form-group row">  
-	<label class="col-sm-2 col-form-label">name:</label>  
+	<label class="col-sm-2 col-form-label">Name:</label>  
 	<div class="col-sm-4">  
 		<input class="form-control"  type="text" name="ename" id="id_ename" required maxlength="60" value="{{ magazzino.ename }}"/>  
 	</div>  
@@ -72,6 +72,16 @@
 		 <!-- <input type="text" name="edescription" id="id_edescription" required maxlength="500" value="{{ magazzino.edescription }}" />  -->
 	</div>  
   </div>  
+	
+	
+  <div class="form-group row">  
+	<label class="col-sm-2 col-form-label">Progetto:</label>  
+	<div class="col-sm-4">  
+		 <!-- <textarea class="form-control" name="edescription" id="id_edescription" rows="3"  >{{ magazzino.progetto }}</textarea> -->
+		 <input type="text" name="progetto" id="id_progetto" required maxlength="20" value="{{ magazzino.progetto }}" /> 
+	</div>  
+  </div>  
+	
 	
   <div class="form-group row">  
 	<label class="col-sm-1 col-form-label"></label>  

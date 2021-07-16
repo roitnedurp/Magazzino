@@ -14,54 +14,83 @@
 <body>  
 <form method="POST" class="post-form" action="/maga">  
 		{% csrf_token %}  
-	<div class="container bg-light">  
-<br>  
-	<div class="form-group row">  
-	<label class="col-sm-1 col-form-label"></label>  
-	<div class="col-sm-4">  
-	<h3>Enter Details</h3>  
-	</div>  
-  </div>  
+	
+  <div class="container bg-light"><br>  
+    <div class="form-group">  
+	<label class="col-form-label"></label>  
+	  <div class="">  
+	    <h3>Add New Record</h3>  
+	  </div>  
+    </div>  
 
-  <div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part Id:</label>  
-	<div class="col-sm-4">  
+  <div class="form-group">  
+	<label class="form-group">Id:</label>  
+	<div class="form-group">  
 	  {{ form.eid }}  
+        </div>  
   </div>  
 
-  <div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part subkey:</label>  
-	<div class="col-sm-4">  
+  <div class="form-group">  
+	<label class="form-group">Subkey:</label>  
+	<div class="form-group">  
 	  {{ form.subkey }}  
+        </div>  
   </div>  
 
-  </div>  
-  <div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part Name:</label>  
-	<div class="col-sm-4">  
+  <div class="form-group">  
+	<label class="form-group">Name:</label>  
+	<div class="form-group">  
 	  {{ form.ename }}  
+        </div>  
+  </div>  
+
+
+
+
+
+  <div class="form-group">  
+	<label class="form-group">Quantity:</label>  
+	<div class="form-group">  
+	  {{ form.quantity }}  
 	</div>  
   </div>  
-	<div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part Manifacturer:</label>  
-	<div class="col-sm-4">  
-	  {{ form.eefirm }}  
+	<div class="form-group">  
+	<label class="form-group">Code Maker:</label>  
+	<div class="form-group">  
+	  {{ form.code_maker }}  
 	</div>  
   </div>  
-	<div class="form-group row">  
-	<label class="col-sm-2 col-form-label">part Description:</label>  
-	<div class="col-sm-4">  
+      <div class="form-group">
+        <label class="form-group">Code Vendor:</label>
+        <div class="form-group">
+          {{ form.code_vendor }}
+        </div>
+  </div>
+
+	<div class="form-group">  
+	<label class="form-group">Description:</label>  
+	<div class="form-group">  
 	  {{ form.edescription }}  
 	</div>  
   </div>  
-	<div class="form-group row">  
-	<label class="col-sm-1 col-form-label"></label>  
-	<div class="col-sm-4">  
+
+
+	<div class="form-group">  
+	<label class="form-group">Progetto:</label>  
+	<div class="form-group form-control">  
+	  {{ form.progetto }}  
+	</div>  
+  </div>  
+
+
+	<div class="form-group">  
+	<label class="form-group"></label>  
+	<div class="form-group">  
 	<button type="submit" class="btn btn-primary">Submit</button>  
 	<a href="/show" class="btn btn-success">Back</a> 
 	</div>  
   </div>  
-	</div>  
+</div>  
 </form>  
 {% block content %}
 {% endblock %}

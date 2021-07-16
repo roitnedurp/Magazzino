@@ -9,6 +9,7 @@ class Magazzino(models.Model):
         code_maker  = models.CharField(max_length=20)
         code_vendor  = models.CharField(max_length=20)
         edescription = models.TextField( blank=True )
+        progetto  = models.CharField(max_length=20)
         class Meta:
               db_table = "magazzino"
 
