@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'lorenzoProject.wsgi.application'
 #		'ENGINE': 'django.db.backends.mysql',  
 #		'NAME': 'lorenzo',  
 #		'USER':'flavio',  
-#		'PASSWORD':'27182818',  
+#		'PASSWORD':'pwd',  
 #		'HOST':'10.12.0.12',                    # REMOTO
 #		'PORT':'3306'  
 #	}  
