@@ -1,12 +1,14 @@
 # get Magazzino running
 
+Updated: 2021-10-06
+
 - `source .env/bin/activate`
 
 - `cd lorenzoProject/`
 
 - `./run.sh`
 
-- point web browser to http://localhost:8000
+- point web browser to http://localhost:8000/show
 
 # requirements
 - django
